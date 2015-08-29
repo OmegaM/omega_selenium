@@ -22,6 +22,7 @@ public class OmegaBaiduTest {
      */
     @Before
     public void setUp() {
+        System.out.println("in setUp method...");
         this.driver = new FirefoxDriver();
     }
 
@@ -29,6 +30,7 @@ public class OmegaBaiduTest {
      */
     @After
     public void tearDown() {
+        System.out.println("in tearDown method...");
         this.driver.close();
     }
 
