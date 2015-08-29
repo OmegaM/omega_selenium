@@ -22,6 +22,7 @@ public class OmegaBaiduTest {
      */
     @Before
     public void setUp() {
+        System.out.println("in setUp method...");
         this.driver = new FirefoxDriver();
     }
 
@@ -29,6 +30,7 @@ public class OmegaBaiduTest {
      */
     @After
     public void tearDown() {
+        System.out.println("in tearDown method...");
         this.driver.close();
     }
 
@@ -39,6 +41,11 @@ public class OmegaBaiduTest {
         this.driver.findElement(By.id("su")).click();
         Assert.assertTrue(this.driver.getCurrentUrl().contains("wd=music"));
 
+    }
+
+    @Test
+    public void testTwoStringEuals() {
+        Assert.assertEquals("Selenium", "Selenium");
     }
 
 }
