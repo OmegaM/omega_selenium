@@ -43,9 +43,5 @@ public class OmegaBaiduTest {
 
     }
 
-    @Test
-    public void testTwoStringEuals() {
-        Assert.assertEquals("Selenium", "Selenium");
-    }
 
 }
