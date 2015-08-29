@@ -35,7 +35,7 @@ public class OmegaBaiduTest {
     }
 
     @Test
-    public void test() {
+    public void testBaiduSearchKeyWord() {
         this.driver.get("http://www.baidu.com");
         this.driver.findElement(By.id("kw")).sendKeys("music");
         this.driver.findElement(By.id("su")).click();
